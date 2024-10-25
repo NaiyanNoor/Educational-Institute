@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+
+body{
+    margin: 0;
+}
+
+.banner{
+    width: 100%;
+    background-color: #000053;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.navbr{
+    overflow:hidden;
+    background-color: #1c1c84;
+}
+
+.navbr a{
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active-nav{
+    background-color: #04aa6d;
+}
+
+.navbr a:hover{
+    background-color: #ddd;
+    color: black;
+}

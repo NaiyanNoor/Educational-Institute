@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+
+body{
+    margin: 0;
+}
+
+.banner{
+    width: 100%;
+    background-color: #000053;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.navbr{
+    overflow:hidden;
+    background-color: #1c1c84;
+}
+
+.navbr a{
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active-nav{
+    background-color: #04aa6d;
+}
+
+.navbr a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.title{
+    font-size: 2.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 7px;
+    margin-bottom:7px ;
+    text-align: center;
+    width: 400px;
+    height: auto;
+    border: 1px solid red;
+    border-radius: 10px; 
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive{
+    padding: 6px 6px;
+    float: left;
+    width: 24%;
+    
+}
+
+.gallery{
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    transition: 1.2s;
+}
+
+.gallery:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 3px 5px 2px;
+    border: 1px solid #777;
+}
+
+.gallery img{
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dece{
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width:700px) {
+    .responsive{
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .responsive{
+        width: 100%;
+    }
+}
+.clearfix{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.institute{
+    margin: 15px 0;
+}
+
+.img{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #777;
+    
+}
+
+.about{
+    font-size: 1.5rem;
+    padding: 23px;
+    color: grey;
+}
+
+.about h4{
+    text-decoration: underline;
+}
+
+.about p{
+    text-align: justify;
+}

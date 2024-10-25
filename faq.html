@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traning Institute</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>সরকারি আজিজুল হক কলেজ,বগুড়া</h1>
+        <h3 style="font-size: 1.5rem;">Govt Azizul Haque College , Bogura</h3>
+        <p style="font-size: 1.2rem;">College Code: 119246</p>
+    </div>
+
+    <div class="navbr">
+        <a href="home.html" class="active-nav">Homepage</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+    <hr>
+
+    <h3 class="title" style="width: 700px;color: green;">Frequently Asked Question(s)</h3>
+
+    <button class="collapsible">What is the history of Azizul Haque College?</button>
+
+    <div class="content">
+        <p>The college was established in July 1939. It was named after Sir Azizul Haque, who was vice chancellor of Calcutta University at the time. M. M. Mukherjee was the first principal. The college organised its first classes at Subil Free Primary School in the north side of Bogra town.</p>
+    </div>
+
+    <button class="collapsible">How much area does Azizul Haque College have?</button>
+
+    <div class="content">
+        <p>In 1962, through the efforts of Habibur Rahaman (previous Education Minister of the Pakistani government) a new building was established on 55 acres (0.22 km2) of land.</p>
+    </div>
+
+    <button class="collapsible">What is the college code for Azizul Haque College?</button>
+
+    <div class="content">
+        <p>AZIZUL HAQUE COLLEGE - 2701.</p>
+    </div>
+
+    <button class="collapsible">What is the ranking of government Azizul Haque College in Bangladesh?</button>
+
+    <div class="content">
+        <p>Government Azizul Haque College of Bogura has secured third position under National University College Ranking this year among the 881 Colleges of Bangladesh on the basis of their academic performance, educational environment and other co-curriculum activities.</p>
+    </div>
+
+    <button class="collapsible">Who is Aziz Haque?</button>
+
+    <div class="content">
+        <p>Sir Muhammad Azizul Haque, KCSI, CIE (27 November 1892 - 23 March 1947), also known as Muhammad Azizul Huq or Mohammad Azizul Huque, was a Bengali lawyer, writer and public servant. He studied at Presidency College and University Law College in Calcutta.</p>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function(){
+            this.classList.toggle("activefaq");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else{
+                content.style.maxHeight = content.scrollHeight + "px"
+            }
+        });
+    }
+</script>
